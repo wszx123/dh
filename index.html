@@ -1,76 +1,348 @@
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="520解说镜像导航网站"/>
-    <link rel="shortcut icon" href="static/logo.svg" type="image/x-icon">
-    <meta name="keywords" content="镜像导航网站" />
-	<!-- <meta http-equiv='Content-Security-Policy' content='block-all-mixed-content'>  -->
-    <title>520解说镜像导航网站</title>
-    <link rel="shortcut icon" href="favcion.ico" />
-    <link rel="stylesheet" href="static/style.css">
-    <link rel="stylesheet" href="static/themify-icons.css">
-</head>
+<title>I WS01 Iの个人主页</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="https://cdn.glitch.global/efdace30-a873-49c7-aaa9-4fa31679ee0c/thumbnails%2F%E5%9B%BE%E6%A0%8701.jpg?1692046715299">
+<style>
+<!--其中background-image属性设置了网页的背景图片，container类设置了网页的宽度和居中对齐，row类设置了按纽的排列方式，button类设置了按纽的样式。-->
 
-<body>
-    <div class="container" id="container">
-        <aside class="left-bar" id="leftBar">
-            <div class="big-logo">
-                <img src = "static/logo.svg"/>
-            </div>
-            <div class = "ti-sec">
-                <p>520jieshuo</p> 
-            </div>
-            <div class="title">
-                <p>个人导航</p>
-            </div>
-            <nav class="nav">
+<style type=text/css>
+body {
+font:normal 14px Tahoma, Simsun;
+vertical-align:baseline;
+background:#fff;
+margin:0;
+padding:25px 0 0;
+}
 
-                <ul class="nav-item" id="navItem">
-                </ul>
-	        <ul class="nav-item" id="navItem">
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <!-- 添加更多链接 -->
-                </ul>
-                <div class="item comment">
-					<p class="icp"><a href="http://beian.miit.gov.cn/">京ICP备xxxxxxxxxxx</a></p>
-                </div>
-            </nav>
-        </aside>
-        <section class="main">
-            <div id="mainContent">
-                <!-- 手机端菜单 -->
-                <div id="menu">
-                    <a href="#"><i class="ti-menu-alt"></i></a>
-                </div>
-				<!-- 说明 -->
-				<div class = "about box">
-				    <p><i class="ti-pencil-alt"></i>本导航页仅供个人使用,纯静态无框架[html+css+js]</P>
-				</div>
+body {
+background-image: url(./my/bj01.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
 
-                <footer class="footer">
-                    <div class="copyright">
-                        <div>
-                            <p>CopyRight from <a target="_blank" href="https://github.com/geekape/geek-navigation">geekape</a> by abc ©  2020</p>                        
-                        </div>
-                    </div>
-                </footer>
-                <div id="fixedBar">
-                    <svg class="Zi Zi--BackToTop" title="回到顶部" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
-                        <path d="M16.036 19.59a1 1 0 0 1-.997.995H9.032a.996.996 0 0 1-.997-.996v-7.005H5.03c-1.1 0-1.36-.633-.578-1.416L11.33 4.29a1.003 1.003 0 0 1 1.412 0l6.878 6.88c.782.78.523 1.415-.58 1.415h-3.004v7.005z"></path>
-                    </svg>
-                </div>
-            </div>
-        </section>
-        <!-- <script type="text/javascript" src="static/jquery.js"></script> -->
-        <script src="static/jquery.js"></script>
-		<script src="static/nav.js"></script>
+.sites {
+width:1042px;
+background:;
+border:1px solid rgba(0,0,0,.06);
+margin:15px auto;
+padding:0px;
+}
 
-        </div>
+.sites01 {
+width:1040px;
+background:;
+border:2px solid auto;
+margin:15px auto;
+padding:0px;
+}
+
+.sites dl {
+height:36px;
+line-height:36px;
+display:block;
+margin:0;
+}
+
+.sites dl.alt {
+background:#c5dff6;
+border-top:1px solid #ffffff;
+border-bottom:1px solid #ffffff;
+}
+
+.sites dl.alt2 {
+background:#dcecfa;
+border-top:1px solid #ffffff;
+border-bottom:1px solid #ffffff;
+}
+
+.sites dt,.sites dd {
+text-align:center;
+display:block;
+float:left;
+}
+
+.sites dt {
+width:60px;
+}
+
+.sites dd {
+width:90px;
+margin:0;
+}
+
+.footer {
+font-size:12px;
+color:#ffffff;
+margin:15px auto;
+}
+
+.center {
+text-align:center;
+font-weight:700;
+}
+
+.center a {
+color:#f30;
+}
+
+ .sidebar{
+float: left;/*侧边栏居左，改为right可令侧边栏居右*/
+width: 200px;
+border:2px solid #f2f2f2;
+margin-left:20%;
+background:#f8f8f8;
+position: absolute;
+}
+
+.header,.links,.footer {
+width:580px;
+text-align:center;
+margin:5px auto;
+padding:2px;
+}
+.search {
+width:580px;
+text-align:center;
+background:#f8f8f8;
+border:2px solid #f2f2f2;
+margin:15px auto;
+padding:8px 4px;
+}
+
+.search form {
+width:485px;
+margin:0 auto;
+}
+
+.i {
+font-size:16px;
+font-family:Tahoma;
+width:360px;
+height:30px;
+line-height:20px;
+margin-right:2px;
+background:rgba(0,0,0,.01) url(img/search_bg.png) no-repeat;
+border:1px solid #6495ED;
+display:inline-block;
+border-color:#ffffff #ffffff #ffffff #ffffff; /* 搜索线条 */
+padding:3px 6px;
+}
+
+.btn_wr {
+width:87px;
+height:30px;
+vertical-align:top;
+_padding-top:1px;
+background:rgba(0,0,0,.01) url(img/search_bg.png) no-repeat -202px bottom; /* 搜索框背景 */
+display:inline-block;
+}
+
+.btn {
+font:normal 20px Tahoma;
+width:85px;
+height:35px; /* 搜索按钮高度为40px */
+background:rgba(0,0,0,.16) url(img/search_bg.png) no-repeat 0 -35px;
+cursor:pointer;
+border:0;
+padding:0;
+font-size: 16px; /* 搜索框缩小字体大小为20px */
+color: white; /* 搜索框字体 */
+}
+
+select[name="sengines"] {
+height: 35px; /* 修改下拉框的高度为40px */
+font-size: 16px; /* 搜索框缩小字体大小为20px */
+color: white; /* 搜索框字体 */
+background: rgba(0, 0, 0, .20)
+}
+
+.btn_h {
+background-position:-100px -35px;
+}
+
+.button-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: left;
+}
+
+.button1 {
+width: 126px;
+height: 60px;
+background-color: rgba(0,0,0,.42);
+margin: 2px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+font-size: 16px;
+cursor: pointer;
+}
+.button2 {
+width: 126px;
+height: 60px;
+background-color: rgba(0,0,0,.42);
+margin: 2px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: red;
+font-size: 16px;
+cursor: pointer;
+}
+.button3 {
+width: 126px;
+height: 60px;
+background-color: rgba(0,0,0,.42);
+margin: 2px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: yellow;
+font-size: 16px;
+cursor: pointer;
+}
+
+.avatar {
+	border-radius: 50%;
+	width: 150px;
+}
+
+.content-container {
+	position: relative;
+	text-align: center;
+}
+</style>
+
+<div class="header">
+<a href="https://boke.199881.xyz" target="_blank" > <img class="avatar" src="https://img.199881.xyz/file/2e0fac86f9da7febd84d4.jpg"/></a>
+
+<!-- 测试多搜索 -->
+<div class="header"> 
+<div style="background:rgba(0,0,0,.02);height:68px;">
+<br />
+<form name="searchform" onSubmit="return dosearch();" >
+
+<input name="ie" type="hidden"  value="UTF-8">
+<input type="text" name="searchterms" class="i">
+
+<select name="sengines" >
+<option value="http://www.baidu.com/s?wd=" selected>百 度</option>
+<option value="https://www.bing.com/search?q=">必 应</option>
+<option value="https://so.toutiao.com/search?dvpf=pc&source=trending_card&keyword=">头 条</option>
+<option value="https://search.bilibili.com/all?keyword=">哔 哩</option>
+<option value="https://www.so.com/s?q=">3 6 0</option>
+<option value="https://www.sogou.com/web?query=">搜 狗</option>
+<option value="https://www.zhihu.com/search?q=">知乎</option>
+<option value="http://www.google.com/search?q=">谷 歌</option>
+<option value="https://github.com/search?q=">github</option>
+<option value="https://fsoufsou.com/search?q=">F 搜</option>
+<option value="https://m.sm.cn/s?q=">神 马</option>
+</select>
+
+<input type="submit" class="btn" name="SearchSubmit" value=" 搜   索 ">
+
+</form>
+<script type="text/javascript">
+function dosearch() {
+var sf=document.searchform;
+var submitto = sf.sengines.options[sf.sengines.selectedIndex].value + encodeURI(sf.searchterms.value)+"&ie=utf-8" ;<!-- 注意encodeURI不用escape是因为中文可能变乱码 -->
+window.open(submitto);  <!-- 新窗口打开  window.location.href = submitto；原窗口打开 -->
+return false;
+}
+</script>
+<br />
+</div>
+
+</div>
+<!--   20230702 end -->
+
+</div>
+<div class="sites">  <!-- 网址超链接开始--><!--    模块隔离    -->
+<div class="button-container">
+<a href="https://boke.199881.xyz/" class="button2" target="_blank" >休闲小屋</a>
+<a href="https://blog.199881.xyz" class="button1" target="_blank" >wszx博客</a>
+<a href="https://tool.cn88.link/" class="button1" target="_blank" >在线工具</a>
+<a href="https://bidianer.cn88.link/" class="button1" target="_blank" >笔点导航</a>
+<a href="https://hao.360.com/" class="button1" target="_blank" >360导航</a>
+<a href="https://www.toutiao.com/" class="button1" target="_blank" >今日头条</a>
+<a href="https://www.hao123.com/" class="button1" target="_blank" >好 123</a>
+<a href="https://hot.imsyy.top/" class="button1" target="_blank" >热        榜</a>
+
+<a href="https://199881.xyz/my/xxdh.html" class="button2" target="_blank" >休闲导航</a>
+<a href="https://199881.xyz/my/yinyue/" class="button1" target="_blank" >ws01音乐</a>
+<a href="https://199881.xyz/my/web/" class="button1" target="_blank" >ws01前端</a>
+<a href="https://note.199881.xyz/" class="button3" target="_blank" >网络记事本</a>
+<a href="https://img2.199881.xyz/" class="button1" target="_blank" >免费图床2</a>
+<a href="https://img.199881.xyz/" class="button1" target="_blank" >免费图床</a>
+<a href="https://freeimg.199881.xyz/img" class="button1" target="_blank" >图床工具</a>
+<a href="https://url.199881.xyz/dlj" class="button1" target="_blank" >短  链  接</a>
+
+<a href="https://gpt.cn88.link/" class="button3" target="_blank" >免费GPT</a>
+<a href="https://pastebin.199881.xyz/WLjsb" class="button1" target="_blank" >免费记事本</a>
+<a href="https://cloudreve.eyei.eu.org/" class="button1" target="_blank" >Cloudreve</a>
+<a href="https://wszx.link/play/" class="button3" target="_blank" >ws01解析</a>
+<a href="https://bk.1oo.dedyn.io/" class="button1" target="_blank" >1oo小屋</a>
+<a href="https://bk.1oo.dedyn.io/my/xz.html" class="button1" target="_blank" >1oo小站</a>
+<a href="https://wp.1oo.dedyn.io/" class="button1" target="_blank" >彩虹网盘</a>
+<a href="https://nz.cn88.link/" class="button1" target="_blank" >哪吒探针</a>
+
+<a href="https://iqiy.eu.org/" class="button1" target="_blank" >iqiy小屋</a>
+<a href="https://dh2.cn88.link/" class="button1" target="_blank" >休闲导航</a>
+<a href="https://www.nodeseek.com/" class="button1" target="_blank" >Nodeseek</a>
+<a href="https://kbs.sports.qq.com/#nba" class="button1" target="_blank" >腾讯直播</a>
+<a href="http://sports.sina.com.cn/nba/" class="button1" target="_blank" >新浪体育</a>
+<a href="http://www.88kanqiu.cc/" class="button1" target="_blank" >88 看球</a>
+<a href="https://www.163.com/" class="button1" target="_blank" >网易163</a>
+<a href="https://tool.lu/" class="button1" target="_blank" >工        具</a>
+
+</div>
+<br />
+
+<!-- body   页脚    -->
+<div class="footer">
+
+<b>版本号：CN-YNDL20230701-01</b><br /> 
+&copy;wszxZJD 云DL备20230701号<br /> 
+
+                <!-- 开站时间开始 -->       
+             <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span> <script language="javascript"> 
+    var now = new Date();
+    function createtime(){
+        var grt= new Date("07/01/2023 00:00:00");/*---这里是网站的启用时间--*/
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24;
+        dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
+        hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;}
+        minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes);
+        if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds);
+        if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "稳定运行"+dnum+"天";
+        document.getElementById("times").innerHTML = hnum + "小时" + mnum + "分" + snum + "秒";
+    }
+    setInterval("createtime()",250); 
+</script> 
+<!-- 开站时间结束 -->  
+
+<!-- 播放器 东东喜欢音乐    -->
+<link href="./播放器代码/APlayer.min.css" rel="stylesheet">
+<script src="./播放器代码/APlayer.min.js"></script>
+<script src="./播放器代码/Meting.min.js"></script>
+<!-- <link href="https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.css" rel="stylesheet">    -->
+<!-- <script src="https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>    -->
+<!-- <script src="https://cdn.bootcdn.net/ajax/libs/meting/2.0.1/Meting.min.js"></script>    -->
+
+<meting-js fixed="true" preload="metadata" mutex="true" volume="0.3" autotheme="true" storage="AllFixed" order="random" server="netease" type="playlist" id="806019092" autoplay="true"><div class="aplayer aplayer-withlist aplayer-fixed aplayer-narrow">
+<div class="aplayer-list aplayer-list-hide" style="max-height: 200px">
+    <ol style="max-height: 200px">
+
 </body>
-
 </html>
